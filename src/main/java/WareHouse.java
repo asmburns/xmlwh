@@ -8,7 +8,7 @@ public class WareHouse {
 
     public static void main(String... arg){
         try {
-            HttpServer server = HttpServer.create(new InetSocketAddress(8500), 0);
+            HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
             HttpContext context = server.createContext("/");
             HttpHandler handler = new RequestHandler();
             context.setHandler(handler);
